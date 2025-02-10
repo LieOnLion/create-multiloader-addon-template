@@ -1,8 +1,8 @@
-package net.examplemod.fabric;
+package dev.lieonlion.examplemod.fabric;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
-import net.examplemod.ExampleBlocks;
-import net.examplemod.ExampleMod;
+import dev.lieonlion.examplemod.ExampleBlocks;
+import dev.lieonlion.examplemod.ExampleMod;
 import net.fabricmc.api.ModInitializer;
 
 public class ExampleModFabric implements ModInitializer {

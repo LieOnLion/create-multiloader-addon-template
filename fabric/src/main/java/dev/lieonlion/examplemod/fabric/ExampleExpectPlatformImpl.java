@@ -1,4 +1,4 @@
-package net.examplemod.fabric;
+package dev.lieonlion.examplemod.fabric;
 
 import net.fabricmc.loader.api.FabricLoader;
 

@@ -1,4 +1,4 @@
-package net.examplemod;
+package dev.lieonlion.examplemod;
 
 import com.simibubi.create.Create;
 import net.minecraft.resources.ResourceLocation;

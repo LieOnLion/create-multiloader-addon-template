@@ -36,13 +36,12 @@ allprojects {
     apply plugin: "architectury-plugin"
     apply plugin: "maven-publish"
 
-    base.archivesName = archives_base_name
-    group = maven_group
+    base.archivesName = mod_name.replaceAll("\\s","")
+    group = mod_group_id
 
     // Formats the mod version to include the loader, Minecraft version, and build number (if present)
-    // example: 1.0.0+fabric-1.18.2-build.100
-    String buildNumber = System.getenv("GITHUB_RUN_NUMBER")
-    version = "$mod_version+$project.name-$minecraft_version" + (buildNumber != null ? "-build.$buildNumber" : "")
+    // example: 1.0.0+1.20.1-fabric
+    version = "$mod_version+$minecraft_version-$project.name"
 
     tasks.withType(JavaCompile).configureEach {
         options.encoding = "UTF-8"

@@ -1,4 +1,4 @@
-package net.examplemod;
+package dev.lieonlion.examplemod;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 
